@@ -1,7 +1,5 @@
 package go_koans
 
-import "fmt"
-
 func aboutSlices() {
 	fruits := []string{"apple", "orange", "mango"}
 
@@ -16,7 +14,6 @@ func aboutSlices() {
 
 	pregnancy_slots = append(pregnancy_slots, "baby!")
 	assert(len(pregnancy_slots) == 4) // slices can be extended with append(), much like realloc in C
-	fmt.Println(cap(pregnancy_slots))
 	assert(cap(pregnancy_slots) == 6) // but with better optimizations [1]
 	// [1] When the capacity is hit, capacity *= 2
 
